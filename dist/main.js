@@ -80,7 +80,7 @@ function handleStop(e){
   chunks = []
 
   downloadButton.href = URL.createObjectURL(blob)
-  downloadButton.download = 'video/webm'
+  downloadButton.download = 'video.webm'
   downloadButton.disabled = false
 
   recordedVideo.src = URL.createObjectURL(blob)
