@@ -74,7 +74,7 @@ function stopRecording(){
 
 function handleStop(e){
   const blob = new Blob(chunks, {
-    type: 'video/webm'
+    type: 'video/mp4'
   })
 
   chunks = []
