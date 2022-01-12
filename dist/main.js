@@ -74,13 +74,13 @@ function stopRecording(){
 
 function handleStop(e){
   const blob = new Blob(chunks, {
-    type: 'video/mp4'
+    type: 'video/webm'
   })
 
   chunks = []
 
   downloadButton.href = URL.createObjectURL(blob)
-  downloadButton.download = 'video.mp4'
+  downloadButton.download = 'video.webm'
   downloadButton.disabled = false
 
   recordedVideo.src = URL.createObjectURL(blob)
